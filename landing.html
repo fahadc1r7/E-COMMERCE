@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Tours | Explore the World</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-wrapper">
+  <div id="welcomeMessage" class="welcome-banner" style="display: none;">
+    Welcome back, <strong id="userName"></strong>! Ready for your next adventure?
+  </div>
+
+  <nav class="landing-nav">
+    <div class="auth-logo"><span>&#9992;</span> Wanderlust Tours</div>
+    <div class="nav-actions">
+      <a href="signup.html" class="btn-outline">Sign Up</a>
+      <button id="logoutBtn" class="btn-outline" type="button">Log Out</button>
+    </div>
+  </nav>
+
+  <section class="landing-hero">
+    <div class="landing-hero-text">
+      <h1>Discover Your Next <span>Adventure</span></h1>
+      <p>From serene beaches to majestic mountains, explore handpicked destinations curated for unforgettable experiences. Your journey begins here.</p>
+      <a href="#destinations" class="btn-primary" style="display: inline-block; width: auto; padding: 0.75rem 2rem;">Explore Destinations</a>
+    </div>
+    <div class="landing-hero-image" aria-hidden="true">&#127758;</div>
+  </section>
+
+  <section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+      <article class="destination-card">
+        <div class="destination-card-image" aria-hidden="true">&#127965;</div>
+        <div class="destination-card-body">
+          <h3>Santorini, Greece</h3>
+          <p>Experience stunning sunsets, white-washed buildings, and crystal-clear Aegean waters on this iconic island paradise.</p>
+        </div>
+      </article>
+      <article class="destination-card">
+        <div class="destination-card-image" aria-hidden="true">&#9968;</div>
+        <div class="destination-card-body">
+          <h3>Swiss Alps</h3>
+          <p>Embark on breathtaking hikes through snow-capped peaks, charming villages, and world-class ski resorts.</p>
+        </div>
+      </article>
+      <article class="destination-card">
+        <div class="destination-card-image" aria-hidden="true">&#127796;</div>
+        <div class="destination-card-body">
+          <h3>Bali, Indonesia</h3>
+          <p>Immerse yourself in lush rice terraces, ancient temples, vibrant culture, and tranquil tropical beaches.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="landing-footer">
+    <p>&copy; 2026 Wanderlust Tours. All rights reserved.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

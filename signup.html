@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Wanderlust Tours</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="auth-layout">
+    <aside class="auth-hero" aria-hidden="true">
+      <div class="auth-hero-content">
+        <h1>Start Your Journey Today</h1>
+        <p>Join thousands of travelers exploring breathtaking destinations around the world.</p>
+        <ul class="auth-hero-features">
+          <li>Exclusive travel deals &amp; packages</li>
+          <li>Personalized destination recommendations</li>
+          <li>24/7 travel support</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <div class="auth-card-header">
+          <div class="auth-logo"><span>&#9992;</span> Wanderlust Tours</div>
+          <h2>Create Account</h2>
+          <p>Fill in your details to get started</p>
+        </div>
+
+        <div id="formAlert" class="alert" role="alert"></div>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="John Doe" required autocomplete="name">
+            <span id="fullNameError" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="example@mail.com" required autocomplete="email">
+            <span id="emailError" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210" required autocomplete="tel">
+            <span id="phoneError" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location / City <span class="required">*</span></label>
+            <input type="text" id="location" name="location" class="form-control" placeholder="Mumbai" required autocomplete="address-level2">
+            <span id="locationError" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <input type="password" id="password" name="password" class="form-control has-toggle" placeholder="Min 8 chars, letters &amp; numbers" required autocomplete="new-password">
+              <button type="button" id="togglePassword" class="toggle-password" aria-label="Show password">&#128584;</button>
+            </div>
+            <span id="passwordError" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-control has-toggle" placeholder="Re-enter your password" required autocomplete="new-password">
+              <button type="button" id="toggleConfirmPassword" class="toggle-password" aria-label="Show password">&#128584;</button>
+            </div>
+            <span id="confirmPasswordError" class="error-message" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn-primary">Sign Up</button>
+        </form>
+
+        <div class="auth-footer">
+          Already have an account? <a href="signin.html">Sign In</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
